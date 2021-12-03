@@ -4470,7 +4470,7 @@ case 'setprefix':
         break;
    
   case 'writebook':            
-            if (args.length == 0) return reply(`example: ${prefix + command} Xeon`)
+            if (args.length == 0) return reply(`example: ${prefix + command} Chino`)
             reply(mess.wait)
             teks = args.join(" ")
             ini_buf = await getBuffer(`https://xeon.herokuapp.com/api/maker/nulis?apikey=${valkey}&text=${teks}`)  
