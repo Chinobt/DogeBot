@@ -2811,9 +2811,9 @@ break
                   return sendMediaURL(
                     from,
                     thumb,
-                    `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the link_`
+                    `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_La duracion excede el limite, a continuacion el link_`
                   );
-                const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Please wait for the media file to be sent it may take a few minutes_`;
+                const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Espere a que se envie el archivo multimedia, puede tardar unos minutos_`;
                 sendMediaURL(from, thumb, captions);
                 await sendMediaURL(from, dl_link).catch(() => reply("error"));
               });
@@ -2835,8 +2835,8 @@ case 'playm2': case 'ytmp3':
 											const { dl_link, thumb, title, filesizeF, filesize } = res
 											axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 											.then(async (a) => {
-												if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the form of a link_`)
-												const captions = `🎧 *PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Please wait for the media file to be sent it may take a few minutes_`
+												if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_La duracion excede el limite, a continuacion el link_`)
+												const captions = `🎧 *PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Espere a que se envie el archivo multimedia, puede tardar unos minutos_`
 												await sendMediaURL(from, thumb, captions)
 												sendMediaURL(from, dl_link).catch(() => reply('error'))
 												}) 
@@ -2864,9 +2864,9 @@ case 'playm2': case 'ytmp3':
                   return sendMediaURL(
                     from,
                     thumb,
-                    `*YTMP 4!*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_For the duration of more than the limit is presented in the link_`
+                    `*YTMP 4!*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_La duracion excede el limite, a continuacion el link_`
                   );
-                const captionsYtmp4 = `*Data Successfully Obtained!*\n\n*Title* : ${title}\n*Ext* : MP4\n*Size* : ${filesizeF}\n\n_Please wait for the media file to be sent it may take a few minutes_`;
+                const captionsYtmp4 = `*Data Successfully Obtained!*\n\n*Title* : ${title}\n*Ext* : MP4\n*Size* : ${filesizeF}\n\n_Espere a que se envie el archivo multimedia, puede tardar unos minutos_`;
                 sendMediaURL(from, thumb, captionsYtmp4);
                 sendMediaURL(from, dl_link).catch(() => reply(mess.error.api));
               });
@@ -2889,7 +2889,7 @@ Source : ${anu.result.source}
 *[Wait] Wait a moment..*`
 
 				buffer1 = await getBuffer(anu.result.url_video)
-				xeon.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.video}.mp4`, quoted:freply, caption: 'Here bro'})
+				xeon.sendMessage(from, buffer1, video, {mimetype: 'video/mp4', filename: `${anu.result.video}.mp4`, quoted:freply, caption: 'Aqui bro'})
 					break  
         //tiktok
         case 'tiktoknowm':   case 'tiktok':
