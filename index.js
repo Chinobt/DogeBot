@@ -378,7 +378,7 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `Hi ${pushname} ${ucapanWaktu} \n\nBefore Using the Bot Verify First `
+const daftar1 = `Hi ${pushname} ${ucapanWaktu} \n\nAntes de usar el bot Verifiquesd primero`
        const daftar2 = '```Haga clic en el botón de abajo para verificar o escriba 8473\nChino 𝐁𝐨𝐭```'
        const daftar3 = [
           {
