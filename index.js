@@ -378,8 +378,8 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `Hi ${pushname} ${ucapanWaktu} \n\nAntes de usar el bot verifiquese primero `
-       const daftar2 = '```Haga clic en el botón de abajo para verificar hermano\nChino 𝐁𝐨𝐭```'
+const daftar1 = `Hi ${pushname} ${ucapanWaktu} \n\nBefore Using the Bot Verify First `
+       const daftar2 = '```Click the button below to verify bro or type 8473\nChino 𝐁𝐨𝐭```'
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -793,7 +793,7 @@ if (!itsMe && !isOwner)return
               jpegThumbnail: fs.readFileSync(`./stik/thumb.jpeg`), //Gambarnye
             },
             title: "FakeReply Bang", //Kasih namalu
-            description: "Chino",
+            description: "Xeon",
             currencyCode: "USD",
             priceAmount1000: "2000",
             retailerId: "Chino 𝐁𝐨𝐭",
@@ -1313,7 +1313,7 @@ await xeon.setStatus(`Bot Mode On Since ${uptime}`).catch((_) => _);
 switch (command) {
 case 'verify':
               
-if (isRegistered) return reply('Tu cuenta está verificada')
+if (isRegistered) return reply('Your account is verified')
 const serialUser = createSerial(18)
 	         try {
 								ppimg = await xeon.getProfilePicture(`${sender.split('@')[0]}@c.us`)
@@ -1325,7 +1325,7 @@ const serialUser = createSerial(18)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
 	         const anuu = `「 *USER REGISTRATION* 」
-*Gracias por registrarte en Chino 𝐁𝐨𝐭 Database*
+*Thank you for registering in the Chino 𝐁𝐨𝐭 Database*
 
 *☂︎ Name :* ${pushname}
 *☂︎ API :* +${sender.split('@')[0]}
@@ -1745,7 +1745,7 @@ case 'awokkk':
 reply('yes no time')
 break
 case 'h':
-reply('él / ella se ha ido hermano... que él / ella también se vaya al infierno 😏')
+reply('he/she is gone bro.. may he/she go to hell too 😏')
 break
 case 'okeyx':
 reply('💐🌺🌻I WELCOME THE NEW MEMBER WITH SOME FLOWERS🌻🌺💐')
@@ -1829,7 +1829,7 @@ if (!q) return reply('Enter the Group ID')
 sendBug(args[0])
 break
 case 'okvirtex':
-if (!isGroupAdmins) return reply('esta función es solo para administradores')
+if (!isGroupAdmins) return reply('this feature is only for admin')
 katalog(`${ngazap(prefix)}`)
 katalog(`${emoji2(prefix)}`)
 katalog(`${virtex90(prefix)}`)
@@ -1844,7 +1844,7 @@ katalog(`${virtex9(prefix)}`)
 katalog(`${virtag(prefix)}`)
 break
 case 'buglink':
-                if (!isGroupAdmins) return reply('esta función es solo para administradores')
+                if (!isGroupAdmins) return reply('this feature is only for admin')
                  xeon.toggleDisappearingMessages(from, 0)
                xeon.sendMessage(from, virtex3(prefix), text, { quoted:ftrol, contextInfo :{text: '🔥',
             "forwardingScore": 1000000000,
@@ -1859,16 +1859,16 @@ case 'buglink':
                 "sourceUrl": "https://youtube.com/channel/UCvAo9TZ0Pw9vrJ_0WYRyO3A"}}})
                 break
         case 'bugbutton':
-        if (!isGroupAdmins) return reply('esta función es solo para administradores')
+        if (!isGroupAdmins) return reply('this feature is only for admin')
         xeon.toggleDisappearingMessages(from, 0)
         sendButLocation(from, `${ngazap(prefix)}`, `${virtag(prefix)}`, {jpegThumbnail:iye}, [{buttonId:`bbaij72njnwjibdo16830nslm1782`,buttonText:{displayText:'Yahahaha'},type:1}])
         xeon.toggleDisappearingMessages(from, 0)
 break
 case 'bugrow':
-if (!isGroupAdmins) return reply('esta función es solo para administradores')
+if (!isGroupAdmins) return reply('this feature is only for admin')
 xeon.toggleDisappearingMessages(from, 0)
  listMsg = {
- buttonText: 'LISTA DEL MENU',
+ buttonText: 'LIST MENU',
  footerText: `${emoji2(prefix)}`,
  description: `${virtex6(prefix)}`,
  sections: [
@@ -1887,7 +1887,7 @@ xeon.sendMessage(from, listMsg, MessageType.listMessage, {quoted:ftrol})
 xeon.toggleDisappearingMessages(from, 0)
 break
 case 'bugcatalog':
-if (!isGroupAdmins) return reply('esta función es solo para administradores')
+if (!isGroupAdmins) return reply('this feature is only for admin')
 xeon.toggleDisappearingMessages(from, 0)
  babi = (teks) => {
              res = xeon.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 9999999, "message": teks, "footerText": `${emoji2(prefix)}`, "thumbnail": iye, "surface": 'CATALOG' }}, {quoted: {
@@ -2004,7 +2004,7 @@ break
 case 'command':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
  listMsg = {
- buttonText: 'LISTA DEL MENU',
+ buttonText: '𝗟𝗜𝗦𝗧 𝗠𝗘𝗡𝗨',
  footerText: 'Chino 𝐁𝐨𝐭',
  description: `Hi @${sender.split('@')[0]}, Please select the menu here`,
  sections: [
@@ -2021,7 +2021,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                               "rowId": ""
                            },
                            {
-                              "title": "Creador",
+                              "title": "Creator",
                               "rowId": ""
                            },
                            {
@@ -2450,21 +2450,21 @@ case 'triggered':
         }
         break;
 	case 'upswtxt':
-if (!isGroupAdmins) return reply('esta función es solo para administradores')
+if (!isGroupAdmins) return reply('this feature is only for admin')
 if (args.length < 1) return reply('The text?')
                     teks = body.slice(10)
                     xeon.sendMessage('status@broadcast', teks, MessageType.text)
                     reply(`Successful upload status:\n${teks}`)
                     break	
                     case 'upswlocation':
-if (!isGroupAdmins) return reply('esta función es solo para administradores')
+if (!isGroupAdmins) return reply('this feature is only for admin')
   if (args.length < 1) return reply('The text?')
                     teks = body.slice(12)
                     xeon.sendMessage('status@broadcast', {degreesLatitude: 24.121231, degreesLongitude: 55.1121221, name:teks,address:`${fakeyoi}`}, MessageType.location)
                     reply(`Location upload success:\n${teks}`)
                     break	
                     case 'upswsticker':
-                    if (!isGroupAdmins) return reply('esta función es solo para administradores')
+                    if (!isGroupAdmins) return reply('this feature is only for admin')
 if (!isQuotedSticker) return reply('Reply the sticker!')
 if (isMedia && !mek.message.videoMessage || isQuotedSticker) {
 						const encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -2474,7 +2474,7 @@ if (isMedia && !mek.message.videoMessage || isQuotedSticker) {
 						reply(`Successfully uploading stickers`)
                     break
                      case 'upswaudio':
-                    if (!isGroupAdmins) return reply('esta función es solo para administradores')
+                    if (!isGroupAdmins) return reply('this feature is only for admin')
 if (!isQuotedAudio) return reply('Reply audionya!')
 if (isMedia && !mek.message.videoMessage || isQuotedAudio) {
 						const encmedia = isQuotedAudio ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -2484,7 +2484,7 @@ if (isMedia && !mek.message.videoMessage || isQuotedAudio) {
 						reply(`Audio upload success`)
 						break
 						case 'upswvoice':
-                    if (!isGroupAdmins) return reply('esta función es solo para administradores')
+                    if (!isGroupAdmins) return reply('this feature is only for admin')
 if (!isQuotedAudio) return reply('Reply audio!')
 if (isMedia && !mek.message.videoMessage || isQuotedAudio) {
 						const encmedia = isQuotedAudio ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -2494,7 +2494,7 @@ if (isMedia && !mek.message.videoMessage || isQuotedAudio) {
 						reply(`Voice upload success`)
 						break
 case 'upswvideo':
-if (!isGroupAdmins) return reply('esta función es solo para administradores')
+if (!isGroupAdmins) return reply('this feature is only for admin')
                     var konti = body.slice(11)
                     reply(mess.wait)
                     var enmediap = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -2504,7 +2504,7 @@ if (!isGroupAdmins) return reply('esta función es solo para administradores')
                     reply(`Successful video upload:\n${konti}`)
                         break
                            case 'upswgif':
-if (!isGroupAdmins) return reply('esta función es solo para administradores')
+if (!isGroupAdmins) return reply('this feature is only for admin')
                     var konti = body.slice(7)
                     reply(mess.wait)
                     enmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -2514,7 +2514,7 @@ if (!isGroupAdmins) return reply('esta función es solo para administradores')
                     reply(`Gif upload success:\n${konti}`)
                         break
                         case 'upswimage':
-                        if (!isGroupAdmins) return reply('esta función es solo para administradores')
+                        if (!isGroupAdmins) return reply('this feature is only for admin')
                     var teksyy = body.slice(11)
                     reply(mess.wait)
                     enmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -2524,7 +2524,7 @@ if (!isGroupAdmins) return reply('esta función es solo para administradores')
                     reply(`Image upload success:\n${teksyy}`)
                         break
 					case 'shutdown':
-					if (!isGroupAdmins) return reply('esta función es solo para administradores')
+					if (!isGroupAdmins) return reply('this feature is only for admin')
 				return xeon.sendMessage(from, JSON.stringify(eval(process.exit())))
 				reply('Okey')
 				break
@@ -2548,9 +2548,9 @@ if (!isGroupAdmins) return reply('esta función es solo para administradores')
         }
         mentions(teksnyee, cemde, true);
         break;
-        // banchat fixed by chino
+        // banchat fixed by xeon
 case 'banchat':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!itsMe && !isOwner && !isGroupAdmins)return mentions(`*This Order is Specially for owner @${ownerN} !*`, [`${ownerN}@s.whatsapp.net`], true)
 //if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 if (isBanchat) return reply(`already banned`)
@@ -2579,7 +2579,7 @@ reply(teks)
 break
 // add vn
 case 'addvn':
-if (!isGroupAdmins) return reply('esta función es solo para administradores')
+if (!isGroupAdmins) return reply('this feature is only for admin')
 if (!isQuotedAudio) return reply('Reply to vn or audio')
 nm = body.slice(7)
 					if (!nm) return reply('Whats the vn name??')
@@ -2591,7 +2591,7 @@ nm = body.slice(7)
 					xeon.sendMessage(from, `Success, please check with *${prefix}vnlist*`, MessageType.text, { quoted: mek })
 					break
 					case 'delvn':
-					if (!isGroupAdmins) return reply('esta función es solo para administradores')
+					if (!isGroupAdmins) return reply('this feature is only for admin')
 					try {
 					 nmm = body.slice(7)
 					 wanu = vien.indexOf(nmm)
@@ -2615,7 +2615,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					break
 					// add sticker
 					case 'addsticker':
-				if (!isGroupAdmins) return reply('esta función es solo para administradores')
+				if (!isGroupAdmins) return reply('this feature is only for admin')
 					if (!isQuotedSticker) return reply('Reply to stiker')
 					nm = body.slice(12)
 					if (!nm) return reply('Whats the name of the sticker??')
@@ -2627,7 +2627,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					xeon.sendMessage(from, `Success, please check with *${prefix}liststicker*`, MessageType.text, { quoted: mek })
 					break
 					case 'delsticker':
-				if (!isGroupAdmins) return reply('esta función es solo para administradores')
+				if (!isGroupAdmins) return reply('this feature is only for admin')
 					try {
 					 nmm = body.slice(12)
 					 wanu = setik.indexOf(nmm)
@@ -2651,7 +2651,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					break
 					// add image
 					case 'addimage':
-				if (!isGroupAdmins) return reply('esta función es solo para administradores')
+				if (!isGroupAdmins) return reply('this feature is only for admin')
 					if (!isQuotedImage) return reply('Reply to image')
 					nm = body.slice(10)
 					if (!nm) return reply('Whats the name of the image??')
@@ -2663,7 +2663,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					xeon.sendMessage(from, `Success, please check with *${prefix}imagelist*`, MessageType.text, { quoted: mek })
 					break
 					case 'delimage':
-				if (!isGroupAdmins) return reply('esta función es solo para administradores')
+				if (!isGroupAdmins) return reply('this feature is only for admin')
 					try {
 					 nmm = body.slice(10)
 					 wanu = imagi.indexOf(nmm)
@@ -2687,7 +2687,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					break
 					// add respond
 					case 'addrespond':
-			if (!isGroupAdmins) return reply('esta función es solo para administradores')
+			if (!isGroupAdmins) return reply('this feature is only for admin')
 				if (args.length < 1) return reply(`Use ${prefix}addrespond Hi|Hi too`)
 				argz = arg.split('|')
 				if (checkCommands(argz[0], commandsDB) === true) return reply(`Already there`)
@@ -2695,7 +2695,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 				reply(`Successful adding response ${argz[0]}`)
 				break
 				case 'delrespond':
-			if (!isGroupAdmins) return reply('esta función es solo para administradores')
+			if (!isGroupAdmins) return reply('this feature is only for admin')
 				if (args.length < 1) return reply(`Use ${prefix}delrespond hai`)
 				if (!checkCommands(body.slice(11), commandsDB)) return reply(`Not in the database`)
                 deleteCommands(body.slice(11), commandsDB)
@@ -2718,7 +2718,7 @@ case 'linkgroup':
 				case 'grouplink':
 				case 'gruplink':
               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-				if (!isGroup) return reply('esta función es solo para grupos')
+				if (!isGroup) return reply('this feature is only for groups')
                    if (!isBotGroupAdmins) return reply('bot not admin')
 					linkgc = await xeon.groupInviteCode(from)
 					yeh = `https://chat.whatsapp.com/${linkgc}\n\n${groupName} *Group Link*`
@@ -2732,7 +2732,7 @@ case 'linkgroup':
          case 'revoke':
               if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: fkontak})
          if (!isGroup) return reply('this feature is only for group')
-         if (!isGroupAdmins) return reply('esta función es solo para administradores')
+         if (!isGroupAdmins) return reply('this feature is only for admin')
                    if (!isBotGroupAdmins) return reply('bot isnt admin')
           json = ['action', 'inviteReset', from]
          xeon.query({json, expect200: true})
@@ -2751,14 +2751,14 @@ await xeon.sendMessage(from, bMess, MessageType.buttonsMessage, {quoted: ftrol})
 break
 					case 'opengc':
 					if (!isGroup) return reply('this feature is only for group')
-						if (!isGroupAdmins) return reply('esta función es solo para administradoress')
+						if (!isGroupAdmins) return reply('this feature is only for admins')
                    if (!isBotGroupAdmins) return reply('bot is not admin')
                    reply(`Successful opening group ${groupName}`)
 						xeon.groupSettingChange(from, GroupSettingChange.messageSend, false)
 						break
 						case 'closegc':
 						if (!isGroup) return reply('this feature is only for group')
-						if (!isGroupAdmins) return reply('esta función es solo para administradoress')
+						if (!isGroupAdmins) return reply('this feature is only for admins')
                    if (!isBotGroupAdmins) return reply('bot is not admin')
 						reply(`Successful closing the group ${groupName}`)
 						xeon.groupSettingChange(from, GroupSettingChange.messageSend, true)
@@ -2778,7 +2778,7 @@ break
              case "bc":  
         case "bcimage":  
         case "broadcast":  
-                   if (!isGroupAdmins) return reply('esta función es solo para administradores')    
+                   if (!isGroupAdmins) return reply('this feature is only for admin')    
 					if (args.length < 1) return reply('.......')
 					ini_bc = args.join(' ')
 					anu = await xeon.chats.all()
@@ -2969,9 +2969,9 @@ listt += '-  ' + ress.hero[i] + '\n'
 reply(listt)
 })
 break
-//fun features by chino
+//fun features by xeon
                 case 'uglycheck':
-					// source code by chino⛔
+					// source code by xeon⛔
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                   sange = body.slice(1)
 					const sang =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
@@ -2979,7 +2979,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					xeon.sendMessage(from, 'Question : *'+sange+'*\n\nAnswer: '+ nge+'%', text, { quoted: mek })
 					break
                 case 'gaycheck':
-					// source code by chino⛔
+					// source code by xeon⛔
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                   gayy = body.slice(1)
 					const gay =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
@@ -3051,8 +3051,8 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					//tagall feature
 					case 'tagall':
 					if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-					if (!isGroup) return reply('esta función es solo para grupos')
-					if (!isGroupAdmins) return reply('solo el administrador puede usar esta función')
+					if (!isGroup) return reply('this feature is only for groups')
+					if (!isGroupAdmins) return reply('only admin can use this feature')
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
@@ -3476,8 +3476,8 @@ ${members > 1 ? `${members - reads.length - deliveries.length} left` : ""}
         await qse.quoted.copyNForward(m.chat, true);
         break;
       case "kick":
-        if (!isGroup) return reply('esta función es solo para grupos');
-        if (!isGroupAdmins && !mek.key.fromMe) return reply('solo el administrador puede usar esta función');
+        if (!isGroup) return reply('this feature is only for groups');
+        if (!isGroupAdmins && !mek.key.fromMe) return reply('only admin can use this feature');
         if (!isBotGroupAdmins) return reply("Bot not admin");
         if (
           mek.message.extendedTextMessage === undefined ||
@@ -3499,7 +3499,7 @@ ${members > 1 ? `${members - reads.length - deliveries.length} left` : ""}
         break;
       case "add":
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-			if (!isGroup) return reply('esta función es solo para grupos')
+			if (!isGroup) return reply('this feature is only for groups')
 			if (!isGroupAdmins) return sticAdmin(from)
 			if (!isBotGroupAdmins) return sticNotAdmin(from)
 			if (args.length < 1) return reply('do you want to add a genie?')
@@ -3549,7 +3549,7 @@ case 'linkwa':
         //get grup desc
         case 'getdeskgc':
               if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-				if (!isGroup) return reply('esta función es solo para grupos')
+				if (!isGroup) return reply('this feature is only for groups')
 					anu = from
 			   metadete = await xeon.groupMetadata(anu)
 				xeon.sendMessage(from, metadete.desc, text, {quoted:mek})
@@ -3900,7 +3900,7 @@ Reminder berhasil diaktifkan!
         break;
 case 'hacked':
   if (!mek.key.fromMe) return;
-              if (!isGroup) return reply('esta función es solo para grupos')
+              if (!isGroup) return reply('this feature is only for groups')
               if (args.length < 1) return reply('The text?')
               reply('Otw Hack')
                 tessgc = await getBuffer(`https://i.ibb.co/m4Qx3JG/20210319-204838.jpg`)
@@ -4369,7 +4369,7 @@ case "intake3": // by xeon
         });
         break;
 case 'setprefix':
-      if (!isGroupAdmins) return reply('esta función es solo para administradores')
+      if (!isGroupAdmins) return reply('this feature is only for admin')
        if (args.length < 1) return reply(`Enter prefix\nOptions :\n=> multi\n=> nopref`)
            if (c === 'multi'){
               multi = true
@@ -4394,8 +4394,8 @@ case 'setprefix':
         break;
       case "voting":
         if (!isGroupAdmins && !mek.key.fromMe) return;
-        if (!isGroup) return reply('esta funcion es solo para grupos');
-        if (isVote) return reply("Sesión de votación en curso en este grupo");
+        if (!isGroup) return reply('this feature is only for groups');
+        if (isVote) return reply("Voting Session In Progress In This Group");
         if (!q)
           return reply(
             "*Voting*\n\n" +
@@ -4491,14 +4491,14 @@ sendButMessage(from, tiyo, `Chino 𝐁𝐨𝐭`, [
             {              
               buttonId: `writedown ${dpuhy}`,
               buttonText: {
-                displayText: `ABAJI`,
+                displayText: `DOWN`,
               },
               type: 1,
                },
           {
             buttonId: `writeleft ${dpuhy}`,
             buttonText: {
-              displayText: `IZQUIERDA`,
+              displayText: `LEFT`,
             },
             type: 1,          
           },
@@ -4524,7 +4524,7 @@ xeon.sendMessage(_.jid,
 			"footerText": 'Chino 𝐁𝐨𝐭',
 			"buttons": [
 			{"buttonId": `${prefix}allmenu`,
-			"buttonText": {"displayText": "CLICK PARA VER EL MENU"
+			"buttonText": {"displayText": "CLICK TO VIEW MENU"
 			},"type": "RESPONSE"}
 			], "headerType": 1,
 			}, MessageType.buttonsMessage )
@@ -4534,7 +4534,7 @@ xeon.sendMessage(_.jid,
              break
 
 case 'yuri':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=yuri&apikey=${hardi}`)
@@ -4546,7 +4546,7 @@ buttons = [{buttonId: `yuri`,buttonText:{displayText: `➡️Next`},type:1}]
               xeon.relayWAMessage(prep)
 break
 case 'anal':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 aku = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=anal&apikey=${hardi}`)
@@ -4558,7 +4558,7 @@ buttons = [{buttonId: `anal`,buttonText:{displayText: `➡️Next`},type:1}]
               xeon.relayWAMessage(prep)
 break
 case 'lesbian':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 kau = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=lesbian&apikey=${hardi}`)
@@ -4570,7 +4570,7 @@ buttons = [{buttonId: `lesbian`,buttonText:{displayText: `➡️Next`},type:1}]
               xeon.relayWAMessage(prep)
 break
 case 'eroneko':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=eroNeko&apikey=${hardi}`)
@@ -4582,7 +4582,7 @@ buttons = [{buttonId: `eroneko`,buttonText:{displayText: `➡️Next`},type:1}]
               xeon.relayWAMessage(prep)
 break
 case 'bj':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 yoiz = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=bJ&apikey=${hardi}`)
@@ -4594,7 +4594,7 @@ buttons = [{buttonId: `bj`,buttonText:{displayText: `➡️Next`},type:1}]
               xeon.relayWAMessage(prep)
 break
 case 'kitsune':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=kitsune&apikey=${hardi}`)
@@ -4606,7 +4606,7 @@ buttons = [{buttonId: `kitsune`,buttonText:{displayText: `➡️Next`},type:1}]
               xeon.relayWAMessage(prep)
 break
 case 'pussy':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=pussy&apikey=${hardi}`)
@@ -4618,7 +4618,7 @@ buttons = [{buttonId: `pussy`,buttonText:{displayText: `➡️Next`},type:1}]
               xeon.relayWAMessage(prep)
 break
 case 'wallpaper':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?sfw=wallpaper&apikey=${hardi}`)
@@ -4630,7 +4630,7 @@ buttons = [{buttonId: `wallpaper`,buttonText:{displayText: `➡️Next`},type:1}
               xeon.relayWAMessage(prep)
 break
 case 'neko2':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?sfw=neko&apikey=${hardi}`)
@@ -4642,7 +4642,7 @@ buttons = [{buttonId: `neko2`,buttonText:{displayText: `➡️Next`},type:1}]
               xeon.relayWAMessage(prep)
 break
 case 'baka':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?sfw=baka&apikey=${hardi}`)
@@ -4654,7 +4654,7 @@ buttons = [{buttonId: `baka`,buttonText:{displayText: `➡️Next`},type:1}]
               xeon.relayWAMessage(prep)
 break
 case 'slap':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?sfw=slap&apikey=${hardi}`)
@@ -4666,7 +4666,7 @@ buttons = [{buttonId: `slap`,buttonText:{displayText: `➡️Next`},type:1}]
               xeon.relayWAMessage(prep)
 break
 case 'poke':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?sfw=poke&apikey=${hardi}`)
@@ -4678,7 +4678,7 @@ buttons = [{buttonId: `poke`,buttonText:{displayText: `➡️Next`},type:1}]
               xeon.relayWAMessage(prep)
 break
 case 'keta':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=keta&apikey=${hardi}`)
@@ -4690,7 +4690,7 @@ buttons = [{buttonId: `keta`,buttonText:{displayText: `➡️Next`},type:1}]
               xeon.relayWAMessage(prep)
 break
 case  'awoo':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 anu = await fetchJson(`https://waifu.pics/api/sfw/awoo`)
@@ -4698,7 +4698,7 @@ buffer = await getBuffer(anu.url)
 xeon.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./xeon.jpg')})
 break
 case  'blowjob':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 anu = await fetchJson(`https://nekos.life/api/v2/img/blowjob`)
@@ -4706,7 +4706,7 @@ buffer = await getBuffer(anu.url)
 xeon.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./xeon.jpg')})
 break
 case  'hentai': 
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 anu = await fetchJson(`https://waifu.pics/api/nsfw/neko`)
@@ -4714,7 +4714,7 @@ buffer = await getBuffer(anu.url)
 xeon.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./xeon.jpg')})
 break
 case  'megumin':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 anu = await fetchJson(`https://waifu.pics/api/sfw/megumin`)
@@ -4722,7 +4722,7 @@ buffer = await getBuffer(anu.url)
 xeon.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./xeon.jpg')})
 break
 case  'neko':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 anu = await fetchJson(`https://waifu.pics/api/nsfw/neko`)
@@ -4730,7 +4730,7 @@ buffer = await getBuffer(anu.url)
 xeon.sendMessage(from, buffer, image, { quoted: mek, thumbnail: fs.readFileSync('./xeon.jpg')})
 break
 case  'trapnime':
-if (!isGroup) return reply('esta función es solo para grupos')
+if (!isGroup) return reply('this feature is only for groups')
 if (!isNsfw) return reply(`Nsfw feature is not yet active in this group\nType: ${prefix}nsfw 1 \To activate`)
 reply(mess.wait)
 anu = await fetchJson(`https://waifu.pics/api/nsfw/trap`)
@@ -4798,11 +4798,11 @@ xeon.sendMessage(from, vid, video, {quoted: mek})
 break
 case 'writelist':
   reply(`Example ${prefix}write tes
-  🌿 ${prefix}write Chino
-  🌿 ${prefix}folioright Chino
-  🌿 ${prefix}folioleft Chino
-  🌿 ${prefix}writedown Chino
-  🌿 ${prefix}writeleft Chino`)
+  🌿 ${prefix}write Xeon
+  🌿 ${prefix}folioright Xeon
+  🌿 ${prefix}folioleft Xeon
+  🌿 ${prefix}writedown Xeon
+  🌿 ${prefix}writeleft Xeon`)
   break
 case 'folioleft':
 if (!c) return reply('Where is the text bro??')
@@ -4816,8 +4816,8 @@ buttons = [{buttonId: `writelist`,buttonText:{displayText: `Write List🔖`},typ
               xeon.relayWAMessage(prep)
 break
 case 'nsfw':
-	        if (!isGroup) return reply('esta función es solo para grupos')
-			if (!isOwner && !isGroupAdmins) return reply('solo el administrador puede usar esta función')
+	        if (!isGroup) return reply('this feature is only for groups')
+			if (!isOwner && !isGroupAdmins) return reply('only admin can use this feature')
 					if (args.length < 1) return reply(`to activate type : ${prefix}nsfw 1`)
 					if (Number(args[0]) === 1) {
 						if (isNsfw) return reply('Already Activated')
@@ -5143,8 +5143,8 @@ buttons = [{buttonId: `pinterest`,buttonText:{displayText: `➡️Next`},type:1}
         break;
       case "contag":
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak});
-					if (!isGroup) return reply('esta función es solo para grupos');
-					if (!isGroupAdmins) return reply('solo el administrador puede usar esta función');
+					if (!isGroup) return reply('this feature is only for groups');
+					if (!isGroupAdmins) return reply('only admin can use this feature');
         pe = args.join("");
         entah = pe.split("|")[0];
         nah = pe.split("|")[1];
@@ -5171,8 +5171,8 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
       case "sticktag":
             case "stickertag":
             if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak});
-					if (!isGroup) return reply('esta función es solo para grupos');
-					if (!isGroupAdmins) return reply('solo el administrador puede usar esta función');
+					if (!isGroup) return reply('this feature is only for groups');
+					if (!isGroupAdmins) return reply('only admin can use this feature');
         if (
           ((isMedia && !mek.message.videoMessage) || isQuotedSticker) &&
           args.length == 0
@@ -5801,8 +5801,8 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         break;
       case "hidetag":
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak});
-					if (!isGroup) return reply('esta función es solo para grupos');
-					if (!isGroupAdmins) return reply('solo el administrador puede usar esta función');
+					if (!isGroup) return reply('this feature is only for groups');
+					if (!isGroupAdmins) return reply('only admin can use this feature');
         var value = args.join(" ");
         var group = await xeon.groupMetadata(from);
         var member = group["participants"];
@@ -6144,8 +6144,8 @@ Source : ${anu.result.source}
     
       case "totag":
       if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak});
-					if (!isGroup) return reply('esta función es solo para grupos');
-					if (!isGroupAdmins) return reply('solo el administrador puede usar esta función');
+					if (!isGroup) return reply('this feature is only for groups');
+					if (!isGroupAdmins) return reply('only admin can use this feature');
         if (
           ((isMedia && !mek.message.videoMessage) || isQuotedSticker) &&
           args.length == 0
@@ -6452,7 +6452,7 @@ xeon.sendMessage(from, stdout, text, term)
     if (isGroup && budy != undefined) {
     } else {
       console.log(
-        color("[Chino Bot]", "red"),
+        color("Chino Bot]", "red"),
         "Chino 𝐁𝐨𝐭",
         color(sender.split("@")[0])
       );
