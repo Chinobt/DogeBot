@@ -1,6 +1,6 @@
-// Script by Xeon 
+// Script by Chino 
 // Chino 𝐁𝐨𝐭
-// ©Xeon Bot Incorporated
+// Chino Bot Incorporated
 const {
   WAConnection: _WAConnection,
   MessageType,
@@ -420,7 +420,7 @@ const timeWib = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 cmhit.push(command)
     //MESS
     mess = {
-      wait: "𝙒𝙖𝙞𝙩 𝘼 𝙈𝙞𝙣𝙪𝙩𝙚 シ︎",
+      wait: "Espere un minuto シ︎",
       success: "Success シ︎",
       wrongFormat: "Wrong format, try again in the menu",
       error: {
@@ -922,7 +922,7 @@ xeon.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
       xeon.groupAdd(from, orangnya);
     };
         const grupinv = (teks) => {
-        	grup = xeon.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `Chino Bot Inc.`, "footerText": "*_Chino 𝐁𝐨𝐭_*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
+        	grup = xeon.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `Xeon Bot Inc.`, "footerText": "*_Chino Bot_*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
             xeon.relayWAMessage(grup)
         }
 const fakeitem = (teks) => {
@@ -932,7 +932,7 @@ const fakeitem = (teks) => {
         	fromMe:false,
         participant:`0@s.whatsapp.net`, ...(from ? {
 remoteJid :"6289523258649-1604595598@g.us" }: {})
-                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`./stik/thumb.jpeg`),"itemCount":10,"status":"INQUIRY","surface":"CATALOG","message":`Chino 𝐁𝐨𝐭`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
+                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`./stik/thumb.jpeg`),"itemCount":10,"status":"INQUIRY","surface":"CATALOG","message":`Chino𝐁𝐨𝐭`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
 // Katalog
 const reply = (teks) => {
              res = xeon.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 111119999, "message": teks, "footerText": "*Xeon*", "thumbnail": bgg, "surface": 'CATALOG' }}, {quoted:ftrol})
@@ -1258,12 +1258,12 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
       }
     }
     if (isGroup && isKickarea && !mek.key.fromMe) {
-      if (sender.includes("91")) {
-        reply("GRUP ONLY +91!");
+      if (sender.includes("52")) {
+        reply("GRUP ONLY +52!");
         xeon.groupRemove(from, [sender]);
       }
     }
-    //auto voice note by xeon
+    //auto voice note by chino
     for (let anju of vien){
 				if (budy === anju){
 					result = fs.readFileSync(`./media/vn/${anju}.mp3`)
@@ -1325,7 +1325,7 @@ const serialUser = createSerial(18)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
 	         const anuu = `「 *USER REGISTRATION* 」
-*Thank you for registering in the Chino 𝐁𝐨𝐭 Database*
+*Gracias por registrarte en el Chino 𝐁𝐨𝐭*
 
 *☂︎ Name :* ${pushname}
 *☂︎ API :* +${sender.split('@')[0]}
@@ -1336,7 +1336,7 @@ const serialUser = createSerial(18)
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
              buttons = [{buttonId: `menu`,buttonText:{displayText: `</️MENU`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
-              buttonsMessage = {footerText:'Xeon', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino', imageMessage: imageMsg,
               contentText:`${anuu}`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkontak})
               xeon.relayWAMessage(prep)
@@ -1360,12 +1360,12 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
-       txtt =`Hi ${pushname} 👋\n\nIF YOU ARE USING MOD WHATSAPP & BUTTONS DOESNT SHOW, TYPE #allmenu`
+       txtt =`Hi ${pushname} 👋\n\nIF YOU ARE USING MOD WHATSAPP & BUTTONS DOESNT SHOW, TYPE #todo el menu`
 
-               buttons = [{buttonId:`allmenu`, 
+               buttons = [{buttonId:`todo el menu`, 
                buttonText:{displayText: 'MENU🐶'},type:1},
-               {buttonId:`owner`,buttonText:{displayText:'CREATOR🐶'},type:1},
-               {buttonId:`command`,buttonText:{displayText:'LIST MENU🐶'},type:1}]
+               {buttonId:`owner`,buttonText:{displayText:'CREADOR🐶'},type:1},
+               {buttonId:`command`,buttonText:{displayText:'LISTA DEL MENU🐶'},type:1}]
 
 
                imageMsg = (await xeon.prepareMessageMedia(fs.readFileSync(`./stik/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/oksip.jpeg`)})).imageMessage
@@ -1388,8 +1388,8 @@ prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fkont
              
                break
 
-        case 'allmenu':
-        case 'xeon':
+        case 'todo el menu':
+        case 'chino':
 groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               privat = xeon.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
               ram2 = `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB`
@@ -1617,7 +1617,7 @@ Just Learn to Make Bots 🐶
  
 𝘼𝙈 𝙉𝙊𝙏 𝘼 𝙋𝙍𝙊𝙂𝙍𝘼𝙈𝙈𝙀𝙍 𝘽𝙍𝙊
 `
-sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`credit`,buttonText:{displayText:'THANKS TO'},type:1},{buttonId:`script`,buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+sendButLocation(from, `${menu}`,`𝘽𝙤𝙩 𝘽𝙮 @${dtod.split("@")[0]}`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LISTA DEL MENU'},type:1},{buttonId:`credit`,buttonText:{displayText:'GRACIAS A'},type:1},{buttonId:`script`,buttonText:{displayText:'SCRIPT'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 
 break
 case 'credit':
@@ -1676,7 +1676,7 @@ case 'bugreport':
               
               break
 case 'restart':
-             if (!isGroupAdmins) return
+             if (!isOwner) return 
              reply(mess.wait)
              exec(`node main`)
              reply('_Restarting Bot Success_')
@@ -1708,7 +1708,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                 dapuhy = await getBuffer(`https://dapuhy-api.herokuapp.com/api/randomimage/quotesyt?apikey=${dapapi}`)
                 xeon.sendMessage(from, dapuhy, image, {quoted: mek})        
                 break    
-case 'auu': // by xeon
+case 'auu': // by chino
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
        reply('No Sis')
         sendButMessage(from, `Hi ${pushname} 🐶`, `What do you want to answer??`, [
@@ -1745,7 +1745,7 @@ case 'awokkk':
 reply('yes no time')
 break
 case 'h':
-reply('he/she is gone bro.. may he/she go to hell too 😏')
+reply('él / ella se ha ido hermano... que él / ella también se vaya al infierno 😏')
 break
 case 'okeyx':
 reply('💐🌺🌻I WELCOME THE NEW MEMBER WITH SOME FLOWERS🌻🌺💐')
@@ -1779,6 +1779,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                sendKontak(from, `${owner}`, `${fakeyoi}`, 'Busy!!')
                await sleep(1000)
                haibg =`Hi ${pushname}\nThats my owner, What do you want to know about??`
+               buttons = [{buttonId: `mygithub`,buttonText:{displayText: 'SC BOT'},type:1},{buttonId:`iggw`,buttonText:{displayText:'PM ON WHATSAPP'},type:1}]
                buttonsMessage = { contentText: `${haibg}`, footerText: `Created By ${fakeyoi} 🌿`, buttons: buttons, headerType: 1 }
                prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{})
                xeon.relayWAMessage(prep)
@@ -1829,7 +1830,7 @@ if (!q) return reply('Enter the Group ID')
 sendBug(args[0])
 break
 case 'okvirtex':
-if (!isGroupAdmins) return reply('this feature is only for admin')
+if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 katalog(`${ngazap(prefix)}`)
 katalog(`${emoji2(prefix)}`)
 katalog(`${virtex90(prefix)}`)
@@ -1844,7 +1845,7 @@ katalog(`${virtex9(prefix)}`)
 katalog(`${virtag(prefix)}`)
 break
 case 'buglink':
-                if (!isGroupAdmins) return reply('this feature is only for admin')
+                if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
                  xeon.toggleDisappearingMessages(from, 0)
                xeon.sendMessage(from, virtex3(prefix), text, { quoted:ftrol, contextInfo :{text: '🔥',
             "forwardingScore": 1000000000,
@@ -1859,16 +1860,16 @@ case 'buglink':
                 "sourceUrl": "https://youtube.com/channel/UCvAo9TZ0Pw9vrJ_0WYRyO3A"}}})
                 break
         case 'bugbutton':
-        if (!isGroupAdmins) return reply('this feature is only for admin')
+        if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
         xeon.toggleDisappearingMessages(from, 0)
         sendButLocation(from, `${ngazap(prefix)}`, `${virtag(prefix)}`, {jpegThumbnail:iye}, [{buttonId:`bbaij72njnwjibdo16830nslm1782`,buttonText:{displayText:'Yahahaha'},type:1}])
         xeon.toggleDisappearingMessages(from, 0)
 break
 case 'bugrow':
-if (!isGroupAdmins) return reply('this feature is only for admin')
+if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 xeon.toggleDisappearingMessages(from, 0)
  listMsg = {
- buttonText: 'LIST MENU',
+ buttonText: 'Lista del Menu',
  footerText: `${emoji2(prefix)}`,
  description: `${virtex6(prefix)}`,
  sections: [
@@ -1887,7 +1888,7 @@ xeon.sendMessage(from, listMsg, MessageType.listMessage, {quoted:ftrol})
 xeon.toggleDisappearingMessages(from, 0)
 break
 case 'bugcatalog':
-if (!isGroupAdmins) return reply('this feature is only for admin')
+if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 xeon.toggleDisappearingMessages(from, 0)
  babi = (teks) => {
              res = xeon.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 9999999, "message": teks, "footerText": `${emoji2(prefix)}`, "thumbnail": iye, "surface": 'CATALOG' }}, {quoted: {
@@ -1991,7 +1992,7 @@ let ini_list = []
 for (let i of nomorowner1) {
 const vname = xeon.contacts[i] != undefined ? xeon.contacts[i].vname || xeon.contacts[i].notify : undefined
 ini_list.push({
-"displayName": 'Chino',
+"displayName": 'Xeon',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xeon.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -2005,13 +2006,16 @@ case 'command':
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
  listMsg = {
  buttonText: '𝗟𝗜𝗦𝗧 𝗠𝗘𝗡𝗨',
- footerText: 'Chino 𝐁𝐨𝐭',
+ footerText: 'Chino Bot',
  description: `Hi @${sender.split('@')[0]}, Please select the menu here`,
  sections: [
                      {
-                      "title": `Chino`,
+                      "title": `Xeon`,
  rows: [
-                         
+                          {
+                              "title": "Script",
+                              "rowId": ""
+                           },
                            {
                               "title": "Speed",
                               "rowId": ""
@@ -2021,7 +2025,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                               "rowId": ""
                            },
                            {
-                              "title": "Creator",
+                              "title": "Creador",
                               "rowId": ""
                            },
                            {
@@ -2032,7 +2036,10 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                               "title": "Runtime",
                               "rowId": ""
                            },
-                           
+                           {
+                              "title": "OwnerMenu",
+                              "rowId": ""
+                           },
                            {
                               "title": "MakerMenu",
                               "rowId": ""
@@ -2071,7 +2078,7 @@ menu = `シ︎𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}𝙩𝙬𝙞𝙩𝙩𝙚𝙧 <𝙪𝙧𝙡>
 `
-sendButMessage(from, menu, `Chino 𝐁𝐨𝐭`, [
+sendButMessage(from, menu, `Chino Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2126,7 +2133,7 @@ menu = `シ𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎シ︎
 
 ㋛${prefix}group [open/close(button)]
 `
-sendButMessage(from, menu, ` Chino 𝐁𝐨𝐭`, [
+sendButMessage(from, menu, `Chino Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2208,7 +2215,7 @@ menu = `シ︎𝘖𝘸𝘯𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 ㋛${prefix}delimage <image name>
  
 ㋛${prefix}imagelist`
-sendButMessage(from, menu, `Chino 𝐁𝐨𝐭`, [
+sendButMessage(from, menu, `Chino Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2231,7 +2238,7 @@ menu = `シ︎𝘜𝘱𝘴𝘸 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}upswlocation
 `
-sendButMessage(from, menu, ` Chino 𝐁𝐨𝐭`, [
+sendButMessage(from, menu, `Chino Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2320,7 +2327,7 @@ menu = `シ︎𝘖𝘵𝘩𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}gimage <query>
 `
-sendButMessage(from, menu, ` Chino 𝐁𝐨𝐭`, [
+sendButMessage(from, menu, `Chino Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2369,7 +2376,7 @@ menu = `シ︎𝘔𝘢𝘬𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}waifu
 `
-sendButMessage(from, menu, ` Chino 𝐁𝐨𝐭`, [
+sendButMessage(from, menu, `Chino Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2408,7 +2415,7 @@ case 'catalog':
         },
         "businessOwnerJid": sender
       },
-      "footerText": " Chino 𝐁𝐨𝐭"
+      "footerText": "Chino Bot"
     }
   }, {quoted: freply})
   xeon.relayWAMessage(list, {waitForAck: true})
@@ -2431,7 +2438,10 @@ case 'triggered':
             
                 break
   break
-
+case 'script':
+		case 'sc':
+		case 'sourcecode':
+		xeon.sendMessage(from, { text: "https://github.com/DGXeon/DogeBot", matchedText: 'nopee', description: "", title: "What are you doing?", jpegThumbnail: iye }, 'extendedTextMessage', { detectLinks: false, contextInfo: { forwardingScore: 508, isForwarded: true}, quoted: finv})
 		break
       //------------------< Sticker Cmd >-------------------
       case "addcmd":
@@ -2450,21 +2460,21 @@ case 'triggered':
         }
         break;
 	case 'upswtxt':
-if (!isGroupAdmins) return reply('this feature is only for admin')
+if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 if (args.length < 1) return reply('The text?')
                     teks = body.slice(10)
                     xeon.sendMessage('status@broadcast', teks, MessageType.text)
                     reply(`Successful upload status:\n${teks}`)
                     break	
                     case 'upswlocation':
-if (!isGroupAdmins) return reply('this feature is only for admin')
+if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
   if (args.length < 1) return reply('The text?')
                     teks = body.slice(12)
                     xeon.sendMessage('status@broadcast', {degreesLatitude: 24.121231, degreesLongitude: 55.1121221, name:teks,address:`${fakeyoi}`}, MessageType.location)
                     reply(`Location upload success:\n${teks}`)
                     break	
                     case 'upswsticker':
-                    if (!isGroupAdmins) return reply('this feature is only for admin')
+                    if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 if (!isQuotedSticker) return reply('Reply the sticker!')
 if (isMedia && !mek.message.videoMessage || isQuotedSticker) {
 						const encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -2474,7 +2484,7 @@ if (isMedia && !mek.message.videoMessage || isQuotedSticker) {
 						reply(`Successfully uploading stickers`)
                     break
                      case 'upswaudio':
-                    if (!isGroupAdmins) return reply('this feature is only for admin')
+                    if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 if (!isQuotedAudio) return reply('Reply audionya!')
 if (isMedia && !mek.message.videoMessage || isQuotedAudio) {
 						const encmedia = isQuotedAudio ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -2484,7 +2494,7 @@ if (isMedia && !mek.message.videoMessage || isQuotedAudio) {
 						reply(`Audio upload success`)
 						break
 						case 'upswvoice':
-                    if (!isGroupAdmins) return reply('this feature is only for admin')
+                    if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 if (!isQuotedAudio) return reply('Reply audio!')
 if (isMedia && !mek.message.videoMessage || isQuotedAudio) {
 						const encmedia = isQuotedAudio ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -2494,7 +2504,7 @@ if (isMedia && !mek.message.videoMessage || isQuotedAudio) {
 						reply(`Voice upload success`)
 						break
 case 'upswvideo':
-if (!isGroupAdmins) return reply('this feature is only for admin')
+if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
                     var konti = body.slice(11)
                     reply(mess.wait)
                     var enmediap = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -2504,7 +2514,7 @@ if (!isGroupAdmins) return reply('this feature is only for admin')
                     reply(`Successful video upload:\n${konti}`)
                         break
                            case 'upswgif':
-if (!isGroupAdmins) return reply('this feature is only for admin')
+if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
                     var konti = body.slice(7)
                     reply(mess.wait)
                     enmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -2514,7 +2524,7 @@ if (!isGroupAdmins) return reply('this feature is only for admin')
                     reply(`Gif upload success:\n${konti}`)
                         break
                         case 'upswimage':
-                        if (!isGroupAdmins) return reply('this feature is only for admin')
+                        if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
                     var teksyy = body.slice(11)
                     reply(mess.wait)
                     enmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -2524,7 +2534,7 @@ if (!isGroupAdmins) return reply('this feature is only for admin')
                     reply(`Image upload success:\n${teksyy}`)
                         break
 					case 'shutdown':
-					if (!isGroupAdmins) return reply('this feature is only for admin')
+					if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 				return xeon.sendMessage(from, JSON.stringify(eval(process.exit())))
 				reply('Okey')
 				break
@@ -2548,7 +2558,7 @@ if (!isGroupAdmins) return reply('this feature is only for admin')
         }
         mentions(teksnyee, cemde, true);
         break;
-        // banchat fixed by xeon
+        // banchat fixed by chino
 case 'banchat':
 if (!isGroup) return reply('this feature is only for groups')
 if (!itsMe && !isOwner && !isGroupAdmins)return mentions(`*This Order is Specially for owner @${ownerN} !*`, [`${ownerN}@s.whatsapp.net`], true)
@@ -2560,7 +2570,7 @@ reply(`Successful bot Ban on this group`)
 break
 
 case 'unbanchat':
-if (!itsMe && !isGroupAdmins)return reply('Only owner can use this feature')
+if (!itsMe && !isOwner)return reply('Solo el creador puede usar esta función')
 if (!isBanchat) return reply(`Already at UnBan`)
 let ubc = bancht.indexOf(from)
 bancht.splice(ubc, 1)
@@ -2579,7 +2589,7 @@ reply(teks)
 break
 // add vn
 case 'addvn':
-if (!isGroupAdmins) return reply('this feature is only for admin')
+if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 if (!isQuotedAudio) return reply('Reply to vn or audio')
 nm = body.slice(7)
 					if (!nm) return reply('Whats the vn name??')
@@ -2591,7 +2601,7 @@ nm = body.slice(7)
 					xeon.sendMessage(from, `Success, please check with *${prefix}vnlist*`, MessageType.text, { quoted: mek })
 					break
 					case 'delvn':
-					if (!isGroupAdmins) return reply('this feature is only for admin')
+					if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 					try {
 					 nmm = body.slice(7)
 					 wanu = vien.indexOf(nmm)
@@ -2615,7 +2625,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					break
 					// add sticker
 					case 'addsticker':
-				if (!isGroupAdmins) return reply('this feature is only for admin')
+				if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 					if (!isQuotedSticker) return reply('Reply to stiker')
 					nm = body.slice(12)
 					if (!nm) return reply('Whats the name of the sticker??')
@@ -2627,7 +2637,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					xeon.sendMessage(from, `Success, please check with *${prefix}liststicker*`, MessageType.text, { quoted: mek })
 					break
 					case 'delsticker':
-				if (!isGroupAdmins) return reply('this feature is only for admin')
+				if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 					try {
 					 nmm = body.slice(12)
 					 wanu = setik.indexOf(nmm)
@@ -2651,7 +2661,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					break
 					// add image
 					case 'addimage':
-				if (!isGroupAdmins) return reply('this feature is only for admin')
+				if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 					if (!isQuotedImage) return reply('Reply to image')
 					nm = body.slice(10)
 					if (!nm) return reply('Whats the name of the image??')
@@ -2663,7 +2673,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					xeon.sendMessage(from, `Success, please check with *${prefix}imagelist*`, MessageType.text, { quoted: mek })
 					break
 					case 'delimage':
-				if (!isGroupAdmins) return reply('this feature is only for admin')
+				if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 					try {
 					 nmm = body.slice(10)
 					 wanu = imagi.indexOf(nmm)
@@ -2687,7 +2697,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					break
 					// add respond
 					case 'addrespond':
-			if (!isGroupAdmins) return reply('this feature is only for admin')
+			if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 				if (args.length < 1) return reply(`Use ${prefix}addrespond Hi|Hi too`)
 				argz = arg.split('|')
 				if (checkCommands(argz[0], commandsDB) === true) return reply(`Already there`)
@@ -2695,7 +2705,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 				reply(`Successful adding response ${argz[0]}`)
 				break
 				case 'delrespond':
-			if (!isGroupAdmins) return reply('this feature is only for admin')
+			if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
 				if (args.length < 1) return reply(`Use ${prefix}delrespond hai`)
 				if (!checkCommands(body.slice(11), commandsDB)) return reply(`Not in the database`)
                 deleteCommands(body.slice(11), commandsDB)
@@ -2778,7 +2788,7 @@ break
              case "bc":  
         case "bcimage":  
         case "broadcast":  
-                   if (!isGroupAdmins) return reply('this feature is only for admin')    
+                   if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')    
 					if (args.length < 1) return reply('.......')
 					ini_bc = args.join(' ')
 					anu = await xeon.chats.all()
@@ -2786,12 +2796,12 @@ break
 					const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 					buff = await xeon.downloadMediaMessage(encmedia)
 					for (let _ of anu) {
-						xeon.sendMessage(_.jid, buff, image, {quoted:fakestatus ,caption: `「  *Chino 𝐁𝐨𝐭 BROADCAST* 」\n\n${ini_bc}`})
+						xeon.sendMessage(_.jid, buff, image, {quoted:fakestatus ,caption: `「  *Chino Bot BROADCAST* 」\n\n${ini_bc}`})
 					}
 					reply('```Success Broadcast```')
 					} else {
 					for (let _ of anu) {
-					xeon.sendMessage(_.jid, `*Chino 𝐁𝐨𝐭 BROADCAST*\n${ini_bc}`, text, { contextInfo: { mentionedJid: [sender],"forwardingScore":999,"isForwarded":true},sendEphemeral: true })
+					xeon.sendMessage(_.jid, `*Chino Bot BROADCAST*\n${ini_bc}`, text, { contextInfo: { mentionedJid: [sender],"forwardingScore":999,"isForwarded":true},sendEphemeral: true })
 					}
 					reply('```Success Broadcast```')
 					}
@@ -2969,9 +2979,9 @@ listt += '-  ' + ress.hero[i] + '\n'
 reply(listt)
 })
 break
-//fun features by xeon
+//fun features by chino
                 case 'uglycheck':
-					// source code by xeon⛔
+					// source code by chino⛔
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                   sange = body.slice(1)
 					const sang =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
@@ -2979,7 +2989,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					xeon.sendMessage(from, 'Question : *'+sange+'*\n\nAnswer: '+ nge+'%', text, { quoted: mek })
 					break
                 case 'gaycheck':
-					// source code by xeon⛔
+					// source code by chino⛔
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                   gayy = body.slice(1)
 					const gay =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
@@ -2988,7 +2998,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					break
                 case 'lesbicheck':
                 case 'lesbiancheck':
-					// source code by xeon⛔
+					// source code by chino⛔
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                   lesbii = body.slice(1)
 					const lesbi =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
@@ -2996,7 +3006,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					xeon.sendMessage(from, 'Question : *'+lesbii+'*\n\nAnswer : '+ bi+'%', text, { quoted: mek })
 					break
                 case 'handsomecheck':
-					// source code by xeon⛔
+					// source code by chino⛔
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 ganteng = body.slice(1)
 					const gan =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
@@ -3004,7 +3014,7 @@ ganteng = body.slice(1)
 					xeon.sendMessage(from, 'Question : *'+ganteng+'*\n\nAnswer : '+ teng+'%', text, { quoted: mek })
 					break
 		case 'beautycheck':
-					// source code by xeon⛔
+					// source code by chino⛔
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 cantik = body.slice(1)
 					const can =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
@@ -3012,7 +3022,7 @@ cantik = body.slice(1)
 					xeon.sendMessage(from, 'Question : *'+cantik+'*\n\nAnswer : '+ tik+'%', text, { quoted: mek })
 					break
 		case 'character':
-					// source code by xeon⛔
+					// source code by chino⛔
 if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 watak = body.slice(1)
 					const wa =['Compassionate','Generous','Grumpy','Forgiving','Obedient','Good','Simp','Kind-Hearted','patient','UwU','top, anyway','Helpful']
@@ -3108,7 +3118,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					mentions(teks, jds, true)
 					break
 					
-					//feature by xeon
+					//feature by chino
 					          case 'phcomment':
                    if (args.length < 1) return reply(`[  ×  ] Example :\n*${prefix}${command} xeon&lol*`)
                    var F = body.slice(10)
@@ -3262,7 +3272,7 @@ reply(`Choose on or off`)
 }
 break
 case 'autovn':
-if (!isGroupAdmins && !mek.key.fromMe) return
+if (!isOwner && !mek.key.fromMe) return
 if (args.length < 1) return reply('Select on or off')
 if (args[0] === "on") {
 if (autovn === true) return
@@ -4062,9 +4072,9 @@ break
       //------------------< Fitur yg pake button >-------------------
       
 	case 'chat':
-			if (args[0].startsWith('08')) return reply('Prefix number with 91')
-            if (args[0].startsWith('+52')) return reply('Prefix number with 91')
-			if (args.length < 1) return reply(`Usage ${prefix}chat 91xnxx|teks`)
+			if (args[0].startsWith('08')) return reply('Prefix number with 52')
+            if (args[0].startsWith('+62')) return reply('Prefix number with 52')
+			if (args.length < 1) return reply(`Usage ${prefix}chat 52xnxx|teks`)
             var pc = body.slice(6)
             var nomor = pc.split("|")[0];
             var org = pc.split("|")[1];
@@ -4139,7 +4149,7 @@ break
 							"hydratedButtons": [
 								{
 									"quickReplyButton": {
-										"displayText": "List Menu",
+										"displayText": "Lista del Menu",
 										"id": "60dd75b0081979507a679f99"
 									},
 									"index": 0
@@ -4219,7 +4229,7 @@ break
           },
         ]);
         break;
-case "intake": // by xeon
+case "intake": // by chino
         sendButMessage(from, `Hi ${pushname}`, `Please select your intake✨`, [
           {
             buttonId: `+52`,
@@ -4244,7 +4254,7 @@ case "intake": // by xeon
           },
         ]);
         break;
-case "intake2": // by xeon
+case "intake2": // by chino
         sendButMessage(from, `Hi ${pushname}`, `Please select the intake V.2✨`, [
           {
             buttonId: `santuy`,
@@ -4269,7 +4279,7 @@ case "intake2": // by xeon
           },
         ]);
         break;
-case "intake3": // by xeon
+case "intake3": // by chino
         sendButMessage(from, `Hi ${pushname}`, `Please select the intake V.3✨`, [
           {
             buttonId: `rikagusriani`,
@@ -4300,14 +4310,14 @@ case "intake3": // by xeon
           {
             buttonId: `opengc`,
             buttonText: {
-              displayText: `OPEN`,
+              displayText: `ABRIR`,
             },
             type: 1,
           },
           {
             buttonId: `closegc`,
             buttonText: {
-              displayText: `CLOSE`,
+              displayText: `CERRAR`,
             },
             type: 1,
           },
@@ -4369,7 +4379,7 @@ case "intake3": // by xeon
         });
         break;
 case 'setprefix':
-      if (!isGroupAdmins) return reply('this feature is only for admin')
+      if (!isOwner && !mek.key.fromMe) return reply('Solo el creador puede usar esta función')
        if (args.length < 1) return reply(`Enter prefix\nOptions :\n=> multi\n=> nopref`)
            if (c === 'multi'){
               multi = true
@@ -4394,8 +4404,8 @@ case 'setprefix':
         break;
       case "voting":
         if (!isGroupAdmins && !mek.key.fromMe) return;
-        if (!isGroup) return reply('this feature is only for groups');
-        if (isVote) return reply("Voting Session In Progress In This Group");
+        if (!isGroup) return reply('esta funcion solo puede usarse en grupos');
+        if (isVote) return reply("Sesión de votación en curso en este grupo");
         if (!q)
           return reply(
             "*Voting*\n\n" +
@@ -4476,7 +4486,7 @@ case 'setprefix':
             ini_buf = await getBuffer(`https://xeon.herokuapp.com/api/maker/nulis?apikey=${valkey}&text=${teks}`)  
 buttons = [{buttonId: `writelist`,buttonText:{displayText: `Write List🔖`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(ini_buf, "imageMessage", { thumbnail: ini_buf, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               xeon.relayWAMessage(prep)
@@ -4487,18 +4497,18 @@ buttons = [{buttonId: `writelist`,buttonText:{displayText: `Write List🔖`},typ
                 if (args.length < 1) return reply(`where is the text bro??\nexample ${prefix + command} ${pushname}`)
                 dpuhy = args.join(' ')
                tiyo = `Please choose one`
-sendButMessage(from, tiyo, `Chino 𝐁𝐨𝐭`, [
+sendButMessage(from, tiyo, `Chino Bot`, [
             {              
               buttonId: `writedown ${dpuhy}`,
               buttonText: {
-                displayText: `DOWN`,
+                displayText: `ABAJO`,
               },
               type: 1,
                },
           {
             buttonId: `writeleft ${dpuhy}`,
             buttonText: {
-              displayText: `LEFT`,
+              displayText: `IZQUIERDA`,
             },
             type: 1,          
           },
@@ -4514,7 +4524,7 @@ sendButMessage(from, tiyo, `Chino 𝐁𝐨𝐭`, [
              const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
              bc = await xeon.downloadMediaMessage(encmedia)
              for (let _ of anu) {
-             xeon.sendMessage(_.jid, bc, image, {quoted:fkontak,caption: `*「 Chino 𝐁𝐨𝐭 BROADCASTING 」*\n\n${body.slice(4)}`})
+             xeon.sendMessage(_.jid, bc, image, {quoted:fkontak,caption: `*「Chino Bot BROADCASTING 」*\n\n${body.slice(4)}`})
 }
              reply('Broadcast success')
              } else {
@@ -4523,7 +4533,7 @@ xeon.sendMessage(_.jid,
 			{"contentText": `*「 BROADCAST 」*\n\n${body.slice(4)}`,
 			"footerText": 'Chino 𝐁𝐨𝐭',
 			"buttons": [
-			{"buttonId": `${prefix}allmenu`,
+			{"buttonId": `${prefix}todo el menu`,
 			"buttonText": {"displayText": "CLICK TO VIEW MENU"
 			},"type": "RESPONSE"}
 			], "headerType": 1,
@@ -4564,7 +4574,7 @@ reply(mess.wait)
 kau = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=lesbian&apikey=${hardi}`)
 buttons = [{buttonId: `lesbian`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(kau, "imageMessage", { thumbnail: kau, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               xeon.relayWAMessage(prep)
@@ -4576,7 +4586,7 @@ reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=eroNeko&apikey=${hardi}`)
 buttons = [{buttonId: `eroneko`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(hai, "imageMessage", { thumbnail: hai, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               xeon.relayWAMessage(prep)
@@ -4588,7 +4598,7 @@ reply(mess.wait)
 yoiz = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=bJ&apikey=${hardi}`)
 buttons = [{buttonId: `bj`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(yoiz, "imageMessage", { thumbnail: yoiz, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               xeon.relayWAMessage(prep)
@@ -4600,7 +4610,7 @@ reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=kitsune&apikey=${hardi}`)
 buttons = [{buttonId: `kitsune`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(hai, "imageMessage", { thumbnail: hai, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               xeon.relayWAMessage(prep)
@@ -4612,7 +4622,7 @@ reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=pussy&apikey=${hardi}`)
 buttons = [{buttonId: `pussy`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(hai, "imageMessage", { thumbnail: hai, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               xeon.relayWAMessage(prep)
@@ -4624,7 +4634,7 @@ reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?sfw=wallpaper&apikey=${hardi}`)
 buttons = [{buttonId: `wallpaper`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(hai, "imageMessage", { thumbnail: hai, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               xeon.relayWAMessage(prep)
@@ -4636,7 +4646,7 @@ reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?sfw=neko&apikey=${hardi}`)
 buttons = [{buttonId: `neko2`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(hai, "imageMessage", { thumbnail: hai, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               xeon.relayWAMessage(prep)
@@ -4648,7 +4658,7 @@ reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?sfw=baka&apikey=${hardi}`)
 buttons = [{buttonId: `baka`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(hai, "imageMessage", { thumbnail: hai, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               xeon.relayWAMessage(prep)
@@ -4660,7 +4670,7 @@ reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?sfw=slap&apikey=${hardi}`)
 buttons = [{buttonId: `slap`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(hai, "imageMessage", { thumbnail: hai, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               xeon.relayWAMessage(prep)
@@ -4672,7 +4682,7 @@ reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?sfw=poke&apikey=${hardi}`)
 buttons = [{buttonId: `poke`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(hai, "imageMessage", { thumbnail: hai, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               xeon.relayWAMessage(prep)
@@ -4684,7 +4694,7 @@ reply(mess.wait)
 hai = await getBuffer(`https://hardianto-chan.herokuapp.com/api/anime/random?nsfw=keta&apikey=${hardi}`)
 buttons = [{buttonId: `keta`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(hai, "imageMessage", { thumbnail: hai, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: fvn})
               xeon.relayWAMessage(prep)
@@ -4744,7 +4754,7 @@ reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/nuliskiri?text=${c}&apikey=${hardi}`)
 buttons = [{buttonId: `writeleft`,buttonText:{displayText: `Write List🔖`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(kon, "imageMessage", { thumbnail: kon, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               xeon.relayWAMessage(prep)
@@ -4756,7 +4766,7 @@ reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/nuliskanan?text=${c}&apikey=${hardi}`)
 buttons = [{buttonId: `writelist`,buttonText:{displayText: `Write List🔖`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(kon, "imageMessage", { thumbnail: kon, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               xeon.relayWAMessage(prep)
@@ -4768,7 +4778,7 @@ reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/foliokanan?text=${c}&apikey=${hardi}`)
 buttons = [{buttonId: `writelist`,buttonText:{displayText: `Write List🔖`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(kon, "imageMessage", { thumbnail: kon, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               xeon.relayWAMessage(prep)
@@ -4810,7 +4820,7 @@ reply(mess.wait)
 kon = await getBuffer(`https://hardianto-chan.herokuapp.com/api/foliokiri?text=${c}&apikey=${hardi}`)
 buttons = [{buttonId: `writelist`,buttonText:{displayText: `Write List🔖`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(kon, "imageMessage", { thumbnail: kon, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               xeon.relayWAMessage(prep)
@@ -4961,7 +4971,7 @@ case 'nsfw':
 					buffer1 = await getBuffer(anu.result.url)
 buttons = [{buttonId: `quote`,buttonText:{displayText: `Thx Dah Pake`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(buffer1, "imageMessage", { thumbnail: buffer1, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               xeon.relayWAMessage(prep)
@@ -5095,7 +5105,7 @@ ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.bat
         let di = await getBuffer(ac);
 buttons = [{buttonId: `pinterest`,buttonText:{displayText: `➡️Next`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(di, "imageMessage", { thumbnail: di, })).imageMessage
-              buttonsMessage = {footerText:'Chino 𝐁𝐨𝐭', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'Chino Bot', imageMessage: imageMsg,
               contentText:`ɴᴏᴛᴇ: ʜᴏʀɴʏ = ʙᴏɴᴋs`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: ftrol})
               xeon.relayWAMessage(prep)
@@ -5600,7 +5610,7 @@ case 'attp':
         );
         break;
 case 'antidelete':
-if (!itsMe && !isGroupAdmins) return
+if (!isOwner && !itsMe) return
 if (args.length < 1) return reply('Select on or off')
 if (args[0] === "on") {
 if(antidel)return reply('It has been activated before!')
@@ -5615,7 +5625,7 @@ reply(`Select on or off`)
 }
 break
       case 'welcome':
-if (!itsMe && !isGroupAdmins) return
+if (!isOwner && !itsMe) return
 if (args.length < 1) return reply('Select on or off')
 if (args[0] === "on") {
 if(welcom)return reply('It has been activated before!')
@@ -6373,7 +6383,7 @@ if (_chats.startsWith('$')){
 if (!isOwner)return// reply(`This command can not be carried out by rent bot temporarily`)
 if (!q)return 
 var itsme = `${sender}`
-var split = `*Chino Bot Inc.*`
+var split = `*Xeon Bot Inc.*`
 const term = {
 contextInfo: {
 participant: itsme,
@@ -6452,7 +6462,7 @@ xeon.sendMessage(from, stdout, text, term)
     if (isGroup && budy != undefined) {
     } else {
       console.log(
-        color("Chino Bot]", "red"),
+        color("[Doge Bot]", "red"),
         "Chino 𝐁𝐨𝐭",
         color(sender.split("@")[0])
       );
