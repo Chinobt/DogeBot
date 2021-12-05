@@ -378,8 +378,8 @@ const checkRegisteredUser = (sender) => {
     if (prefix && command) cmdadd();
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
-const daftar1 = `Hi ${pushname} ${ucapanWaktu} \n\nAntes de usar el bot verifiquese primero `
-       const daftar2 = '```Haga clic en el botón de abajo para verificar hermano\nChino 𝐁𝐨𝐭```'
+const daftar1 = `Hi ${pushname} ${ucapanWaktu} \n\nBefore Using the Bot Verify First `
+       const daftar2 = '```Click the button below to verify bro or type 8473\nChino 𝐁𝐨𝐭```'
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -1325,7 +1325,7 @@ const serialUser = createSerial(18)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
 	         const anuu = `「 *USER REGISTRATION* 」
-*Gracias por registrarte en Chino 𝐁𝐨𝐭 Database*
+*Thank you for registering in the Chino 𝐁𝐨𝐭 Database*
 
 *☂︎ Name :* ${pushname}
 *☂︎ API :* +${sender.split('@')[0]}
@@ -6452,7 +6452,7 @@ xeon.sendMessage(from, stdout, text, term)
     if (isGroup && budy != undefined) {
     } else {
       console.log(
-        color("[Chino Bot]", "red"),
+        color("Chino Bot]", "red"),
         "Chino 𝐁𝐨𝐭",
         color(sender.split("@")[0])
       );
