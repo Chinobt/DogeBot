@@ -921,10 +921,7 @@ xeon.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
     const add = function (from, orangnya) {
       xeon.groupAdd(from, orangnya);
     };
-        const grupinv = (teks) => {
-        	grup = xeon.prepareMessageFromContent(from, { "groupInviteMessage": { "groupJid": '6288213840883-1616169743@g.us', "inviteCode": 'https://chat.whatsapp.com/Dgt6JhzTvlmEor8Zz23fHx', "groupName": `Chino Bot Inc.`, "footerText": "*_Chino 𝐁𝐨𝐭_*", "jpegThumbnail": iye, "caption": teks}}, {quoted:mek})
-            xeon.relayWAMessage(grup)
-        }
+       
 const fakeitem = (teks) => {
             xeon.sendMessage(from, teks, text, {
                 quoted: {
@@ -1744,7 +1741,7 @@ case 'h':
 reply('el/ ella se ha ido hermano... que el / ella tambien se vaya al infierno😏')
 break
 case 'okeyx':
-reply('💐🌺🌻I WELCOME THE NEW MEMBER WITH SOME FLOWERS🌻🌺💐')
+reply('💐🌺🌻 𝑫𝒐𝒚 𝒍𝒂 𝒃𝒊𝒆𝒏𝒗𝒆𝒏𝒊𝒅𝒂 𝒂𝒍 𝒏𝒖𝒆𝒗𝒐 𝒎𝒊𝒆𝒎𝒃𝒓𝒐 𝒄𝒐𝒏 𝒂𝒍𝒈𝒖𝒏𝒂𝒔 𝒇𝒍𝒐𝒓𝒆𝒔🌻🌺💐')
 break
 
 case 'isbaileys': 
