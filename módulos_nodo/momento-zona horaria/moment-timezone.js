@@ -246,7 +246,7 @@
 			abbr = abbr ? abbr[0] : undefined;
 		}
 
-		if (abbr === 'GMT-7') {
+		if (abbr === 'GMT') {
 			abbr = undefined;
 		}
 
