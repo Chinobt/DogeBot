@@ -17,7 +17,7 @@ const moment = require("moment-timezone");
 blocked = [];
 const { color } = require('./lib/color')
 const time2 = moment().tz("Asia/Jakarta").format("HH:mm:ss");
-    if (time2 < "24:59:00") {
+    if (time2 < "20:59:00") {
       var ucapanWaktu = "Good night";
     }
     if (time2 < "19:00:00") {
@@ -42,9 +42,9 @@ const runtime = function (seconds) {
   var m = Math.floor((seconds % 3600) / 60);
   var s = Math.floor(seconds % 60);
   var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " Day, ") : "";
-  var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hour, ") : "";
-  var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minute, ") : "";
-  var sDisplay = s > 0 ? s + (s == 1 ? " second" : " Second") : "";
+  var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hora, ") : "";
+  var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minuto, ") : "";
+  var sDisplay = s > 0 ? s + (s == 1 ? " second" : " Segundos") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 fakenomor = '0@s.whatsapp.net'
@@ -64,7 +64,7 @@ const sleep = async (ms) => {
 const starts = async (client = new WAConnection()) => {
   client.logger.level = "warn";
   client.version = [2, 2143, 3];
-  client.browserDescription = ["Subscribe Xeon", "Chrome", "3.0"];
+  client.browserDescription = ["Chino Bot", "Chrome", "3.0"];
   console.log(banner.string);
   client.on("qr", () => {
     console.log(
@@ -83,7 +83,7 @@ const starts = async (client = new WAConnection()) => {
   });
   client.on("open", () => {
     success("2", "Successfully connected to wa, Subscribe Xeon");
-console.log(color(figlet.textSync(`${spc1}            Doge Bot`, {
+console.log(color(figlet.textSync(`${spc1}            Chino Bot`, {
 font: 'Standard',
 horizontalLayout: 'default',
 vertivalLayout: 'default',
@@ -100,21 +100,17 @@ console.log(color(`${spc4}< ================================================== >
 
     console.log(color('⎇','red'), color('𝙄 𝙬𝙧𝙤𝙩𝙚 𝙩𝙝𝙞𝙨 𝙨𝙘𝙧𝙞𝙥𝙩 𝙢𝙮𝙨𝙚𝙡𝙛!\n𝙉𝙤𝙩𝙚: 𝘿𝙤𝙣𝙩 𝙛𝙤𝙧𝙜𝙚𝙩 𝙩𝙤 𝙨𝙪𝙗𝙨𝙘𝙧𝙞𝙗𝙚 𝙓𝙚𝙤𝙣', 'yellow'))
     console.log(color('⎇','red'), color('𝗦𝗼𝘂𝗿𝗰𝗲 𝗖𝗼𝗱𝗲 𝗩𝗲𝗿𝘀𝗶𝗼𝗻:', 'aqua'), color(version))
-    console.log(color('⎇','red'), color('𝗕𝘂𝗴? 𝗘𝗿𝗿𝗼𝗿? 𝗦𝘂𝗴𝗴𝗲𝘀𝘁𝗶𝗼𝗻? 𝗩𝗶𝘀𝗶𝘁 𝗛𝗲𝗿𝗲:', 'aqua'), color('https://wa.me/526693173770'))
+    console.log(color('⎇','red'), color('𝗕𝘂𝗴? 𝗘𝗿𝗿𝗼𝗿? 𝗦𝘂𝗴𝗴𝗲𝘀𝘁𝗶𝗼𝗻? 𝗩𝗶𝘀𝗶𝘁 𝗛𝗲𝗿𝗲:', 'aqua'), color('https://wa.me/+526693173770'))
     console.log(color('[DOGE BOT]'), color('𝐃𝐨𝐠𝐞 𝐁𝐨𝐭 𝗜𝘀 𝗢𝗻𝗹𝗶𝗻𝗲 ㋛︎', 'aqua'))
     console.log(color('[DEV]', 'cyan'), color('𝗪𝗲𝗹𝗰𝗼𝗺𝗲 𝗕𝗮𝗰𝗸, 𝗢𝘄𝗻𝗲𝗿! 𝗛𝗼𝗽𝗲 𝗬𝗼𝘂 𝗔𝗿𝗲 𝗗𝗼𝗶𝗻𝗴 𝗪𝗲𝗹𝗹~', 'magenta'))
     console.log(color('⎇','green'), color('𝙏𝙝𝙖𝙣𝙠𝙨 𝙛𝙤𝙧 𝙪𝙨𝙞𝙣𝙜 𝙩𝙝𝙚 𝙗𝙤𝙩', 'white'))
   });
 await client.connect({ timeoutMs: 30 * 1000 });
   fs.writeFileSync("./session.json",JSON.stringify(client.base64EncodedAuthInfo(), null, "\t"));
- teks = `https://chat.whatsapp.com/G3a3AQndqS5J45eD7zznXF`
- client.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
+ teks = `https://chat.whatsapp.com/HIjfAnw39A87y7fhIUZZYu`
  console.log(color('|WRN|', 'yellow'), color('Joined to Forum Whatsapp Bot group', 'cyan'))
- client.sendMessage(`526693173770@s.whatsapp.net`, `*Hi Owner Xeon, the bot has been successfully connected to this number*\n────────────────────\n\`\`\`${JSON.stringify(client.user, null, 2)}\`\`\`\n────────────────────\n*If there is an error/bot not responding, please contact the bot developer above, thank you*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Xeon Bot Inc.",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./xeon.jpg'),sourceUrl:"https://wa.me/526693173770?text=Hello bro"}}})
-	console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 fetch(`http://ip-api.com/line`).then(res => res.text())  
         .then(bu =>{
-       client.sendMessage("526693173770@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Xeon Bot Inc.",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./xeon.jpg'),sourceUrl:"https://wa.me/526693173770?text=Hello bro"}}})
      console.log(color('|WRN|', 'yellow'), color('Sending ip address to developer bot', 'cyan'))
    })
       
@@ -140,7 +136,7 @@ fkontakk = { key: {
     participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '526693173770-1604595598@g.us' } : {})
 },
  message: {
-    "contactMessage":{"displayName":'Xeon',"vcard":"BEGIN:VCARD\nVERSION:3.0\nN:2;Xeon;;;\nFN:resku\nitem1.TEL;waid=526693173770:+52 669-317-3770\nitem1.X-ABLabel:Mobile\nEND:VCARD"
+    "contactMessage":{"displayName":'Chino',"vcard":"BEGIN:VCARD\nVERSION:3.0\nN:2;Xeon;;;\nFN:resku\nitem1.TEL;waid=526693173770:+526693173770\nitem1.X-ABLabel:Mobile\nEND:VCARD"
  }}}
 metdata = await client.groupMetadata(anu.jid)
 if(anu.announce == 'false'){
@@ -206,8 +202,8 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 anu_user = v.vname || v.notify || num.split('@')[0]
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
-                teks = `🌿 *Hɪ* @${num.split('@')[0]}\n🌿 *Bɪᴏ* : *${thu.status}*\n🌿 *Mᴇᴍʙᴇʀs : ${memeg}*\n🌿 *Wᴇʟᴄᴏᴍᴇ Tᴏ* \n *${mdata.subject}*\n🌿 *ᴅᴏɴᴛ ꜰᴏʀɢᴇᴛ ᴛᴏ ʀᴇᴀᴅ ᴅᴇꜱᴄʀɪᴘᴛɪᴏɴ*\n 𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`
-                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'DESCRIPTION'},type:1}, {buttonId:`okeyx`,buttonText:{displayText:'CLICK HERE'},type:1}]
+                teks = `🌿 *Hola* @${num.split('@')[0]}\n🌿 *Bɪᴏ* : *${thu.status}*\n🌿 *Mᴇᴍʙᴇʀs : ${memeg}*\n🌿 *Wᴇʟᴄᴏᴍᴇ Tᴏ* \n *${mdata.subject}*\n🌿 *𝐍𝐎 𝐓𝐄 𝐎𝐋𝐕𝐈𝐃𝐄𝐒 𝐃𝐄 𝐋𝐄𝐄𝐑 𝐋𝐀 𝐃𝐄𝐒𝐂𝐑𝐈𝐏𝐂𝐈𝐎́𝐍*\n Chino Bot`
+                welcomeBut = [{buttonId:`getdeskgc`,buttonText:{displayText:'DESCRIPTION'},type:1}, {buttonId:`okeyx`,buttonText:{displayText:'BIENVENIDA'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 client.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }
@@ -221,8 +217,8 @@ if (anu.action == 'add' && !mem.includes(client.user.jid)) {
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
                 memeg = mdata.participants.length
-                out = `*Gᴏᴏᴅ Bʏᴇ* 👋\n@${num.split('@')[0]}\n*𝙷𝚘𝚙𝚎𝚏𝚞𝚕𝚕𝚢 𝚃𝚑𝚎𝚛𝚎 𝚆𝚘𝚗𝚝 𝙱𝚎 𝙱𝚞𝚛𝚍𝚎𝚗 𝙷𝚎𝚛𝚎 𝙰𝚗𝚢𝚖𝚘𝚛𝚎* 🌿\n𝐃𝐨𝐠𝐞 𝐁𝐨𝐭`
-                goodbyeBut = [{buttonId:`h`,buttonText:{displayText:'GET OUT 🚪'},type:1}, {buttonId:`sc`,buttonText:{displayText:'BOT SCRIPT'}, type:1}]
+                out = `*Gᴏᴏᴅ Bʏᴇ* 👋\n@${num.split('@')[0]}\n*𝑂𝑗𝑎𝑙𝑎 𝑛𝑜 𝑡𝑒 𝑣𝑒𝑎𝑚𝑜𝑠 𝑚𝑎𝑠 𝑝𝑜𝑟 𝑎𝑞𝑢𝑖* 🌿\nChino Bot`
+                goodbyeBut = [{buttonId:`h`,buttonText:{displayText:'GET OUT 🚪'},type:1}, {buttonId:`sc`,buttonText:{displayText:'NADA 😆'}, type:1}]
                 goodbyeButt = { contentText: ` `, footerText: `${out}`, buttons: goodbyeBut, headerType: 6, locationMessage: bosco3.message.locationMessage}
                 client.sendMessage(mdata.id, goodbyeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
             }
